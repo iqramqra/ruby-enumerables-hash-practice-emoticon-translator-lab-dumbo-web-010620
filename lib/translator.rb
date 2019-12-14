@@ -30,4 +30,11 @@ end
 def get_english_meaning(file_path, emoticon)
   # code goes here
   library=load_library(file_path)
+  if library[:get_emoticon].include?(emoticon)
+    library[:get_emoticon]
 end
+
+
+
+
+
