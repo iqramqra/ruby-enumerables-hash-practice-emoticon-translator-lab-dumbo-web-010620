@@ -17,6 +17,11 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   library=load_library(file_path)
+  if library[:get_emoticon].include?(emoticon)
+    library[:get_emoticon][emoticon]
+  else
+    "Sorry, that emoticon was not found"
+  end
   #return library[:get_emoticon][emoticon]
   #else return "Sorry, that emoticon was not found"
   # "Sorry, that emoticon was not found"
