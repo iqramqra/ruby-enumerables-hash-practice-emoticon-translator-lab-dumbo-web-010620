@@ -20,10 +20,10 @@ def get_japanese_emoticon(file_path, emoticon)
   # return emo_result["get_emoticon"][eng_emote]
   return library[:get_emoticon][emoticon]
  #library[:get_emoticon].each do |key, value|
-    if key==emoticon
-      puts value
-    end
-  end
+    #if key==emoticon
+     # puts value
+   # end
+  #end
 end
 
 def get_english_meaning
